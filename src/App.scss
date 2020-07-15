@@ -1,0 +1,39 @@
+/*=== Fonts Imports ===*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/*=== Fonts Variables ===*/
+$pacifico: 'Pacifico', cursive;
+$ubuntu: 'Ubuntu', sans-serif;
+
+/*=== Colors ===*/
+$white-ivory: hsl(60, 100%, 97%);
+
+
+/*=== Mobile Styles ===*/
+/*=== HEADER ===*/
+.header-wrapper {
+    margin-top: 25vh;
+}
+
+.header-title {
+    color: $white-ivory;
+    font-family: $pacifico;
+    text-align: center;
+
+    animation: zoomIn; 
+    animation-duration: 2s;
+    font-size: 4em;
+}
+
+/*=== ABOUT ME ===*/
+.about-wrapper {
+    margin-top: 2em;
+}
+
+.about-name {
+    color: $white-ivory;
+    font-family: $ubuntu;
+    text-align: center;
+    font-size: 3em;
+}
