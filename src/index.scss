@@ -13,6 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: $bg-gradient;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
