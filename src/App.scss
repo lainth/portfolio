@@ -1,12 +1,14 @@
 /*=== Fonts Imports ===*/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 /*=== Fonts Variables ===*/
 $pacifico: 'Pacifico', cursive;
 $press-start: 'Press Start 2P', cursive;
 $inconsolata: 'Inconsolata', monospace;
+$rubik: 'Rubik', sans-serif;
 
 /*=== Colors ===*/
 $white-ivory: hsl(60, 100%, 97%);
@@ -51,7 +53,7 @@ $white-ivory: hsl(60, 100%, 97%);
 .pres-anim-jumbo {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 40s;
+    animation-delay: 40s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -67,4 +69,27 @@ $white-ivory: hsl(60, 100%, 97%);
     font-family: $inconsolata;
     font-size: 1.5em;
     color: $white-ivory;
+}
+
+/*=== PROJECTS ===*/
+.projects-wrapper {
+    margin-bottom: 2em;
+}
+
+.projects-anim {
+    opacity: 0;
+    animation: fadeInUp;
+    animation-delay: 40s; //40 later
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.projects-body {
+    font-family: $rubik;
+    font-size: 1.2em;
+}
+
+.projects-titles {
+    font-weight: 800 !important;
+    text-transform: uppercase;
 }
