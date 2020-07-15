@@ -13,16 +13,13 @@ $white-ivory: hsl(60, 100%, 97%);
 /*=== Mobile Styles ===*/
 /*=== HEADER ===*/
 .header-wrapper {
-    margin-top: 25vh;
+    margin-top: 2em;
 }
 
 .header-title {
     color: $white-ivory;
     font-family: $pacifico;
     text-align: center;
-
-    animation: zoomIn; 
-    animation-duration: 2s;
     font-size: 4em;
 }
 
@@ -31,9 +28,16 @@ $white-ivory: hsl(60, 100%, 97%);
     margin-top: 2em;
 }
 
-.about-name {
+.about-text {
     color: $white-ivory;
     font-family: $ubuntu;
     text-align: center;
-    font-size: 3em;
+    font-size: 1.8em;
+}
+
+.about-last-elem {
+    animation: fadeOut;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
