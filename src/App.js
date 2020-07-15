@@ -1,10 +1,18 @@
 import React from 'react';
 
+import Container from 'react-bootstrap/Container';
+
+import Header from './components/Header';
+import AboutMe from './components/AboutMe';
+
 import './App.scss';
 
 const App = () => {
   return (
-    <div></div>
+    <Container fluid>
+      <Header />
+      <AboutMe />
+    </Container>
   );
 }
 
