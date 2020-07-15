@@ -12,6 +12,7 @@ $rubik: 'Rubik', sans-serif;
 
 /*=== Colors ===*/
 $white-ivory: hsl(60, 100%, 97%);
+$orange: hsl(9, 100%, 58%);
 
 /*=== VERY SMALL SCREEN ===*/
 /*=== HEADER ===*/
@@ -92,4 +93,10 @@ $white-ivory: hsl(60, 100%, 97%);
 .projects-titles {
     font-weight: 800 !important;
     text-transform: uppercase;
+}
+
+.projects-btn {
+    border-radius: 0;
+    background-color: $orange !important;
+    border-color: $orange !important;
 }
