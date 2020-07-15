@@ -1,16 +1,17 @@
 /*=== Fonts Imports ===*/
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Press+Start+2P&display=swap');
 
 /*=== Fonts Variables ===*/
 $pacifico: 'Pacifico', cursive;
-$ubuntu: 'Ubuntu', sans-serif;
+$press-start: 'Press Start 2P', cursive;
+$inconsolata: 'Inconsolata', monospace;
 
 /*=== Colors ===*/
 $white-ivory: hsl(60, 100%, 97%);
 
-
-/*=== Mobile Styles ===*/
+/*=== VERY SMALL SCREEN ===*/
 /*=== HEADER ===*/
 .header-wrapper {
     margin-top: 2em;
@@ -30,14 +31,40 @@ $white-ivory: hsl(60, 100%, 97%);
 
 .about-text {
     color: $white-ivory;
-    font-family: $ubuntu;
+    font-family: $press-start;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .about-last-elem {
     animation: fadeOut;
-    animation-delay: 5s;
+    animation-delay: 3s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+}
+
+/*=== PRESENTATION ===*/
+.pres-wrapper {
+   margin-top: -8em;
+}
+
+.pres-anim-jumbo {
+    opacity: 0;
+    animation: fadeInUp;
+    animation-delay: 40s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.pres-style-jumbo {
+    background: none !important;
+    border-radius: 0 !important;
+}
+
+.pres-text {
+    margin-top: 1em;
+    text-align: center;
+    font-family: $inconsolata;
+    font-size: 1.5em;
+    color: $white-ivory;
 }
