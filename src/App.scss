@@ -26,7 +26,7 @@ $orange-light: hsl(16, 87%, 62%);
     color: $white-ivory;
     font-family: $pacifico;
     text-align: center;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 /*=== ABOUT ME ===*/
@@ -50,13 +50,13 @@ $orange-light: hsl(16, 87%, 62%);
 
 /*=== PRESENTATION ===*/
 .pres-wrapper {
-   margin-top: -8em;
+   margin-top: -10em;
 }
 
 .pres-anim-jumbo {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 38s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -64,6 +64,10 @@ $orange-light: hsl(16, 87%, 62%);
 .pres-style-jumbo {
     background: none !important;
     border-radius: 0 !important;
+}
+
+.pres-img {
+    width: 100%;
 }
 
 .pres-text {
@@ -82,7 +86,7 @@ $orange-light: hsl(16, 87%, 62%);
 .projects-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 40s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -123,7 +127,7 @@ $orange-light: hsl(16, 87%, 62%);
 .footer-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 42s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -140,11 +144,52 @@ $orange-light: hsl(16, 87%, 62%);
     background-color: orange !important;
     border-radius: 25px !important;
     border-color: orange !important;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 .footer-copy {
     font-family: $rubik;
     color: $white-ivory;
 }
+
+/*=== MEDIA QUESRIES ===*/
+@media screen 
+    and (min-width: 311px) {
+        .pres-img {
+            margin-top: 1.5em;
+            margin-left: 0.1em;
+        }
+    }
+
+@media screen 
+    and (min-width: 320px) {
+        .pres-img {
+            width: 90%;
+            margin-left: 0.8em;
+        }
+    }
+
+@media screen 
+    and (min-width: 360px) {
+        .pres-img {
+            width: 80%;
+            margin-left: 1.7em;
+        }
+    }
+
+@media screen 
+    and (min-width: 375px) {
+        .pres-img {
+            margin-left: 2em;
+            margin-top: 2em;
+        }
+    }
+
+@media screen 
+    and (min-width: 411px) {
+        .pres-img {
+            width: 75%;
+            margin-left: 2.6em;
+        }
+    }
