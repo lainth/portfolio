@@ -85,6 +85,13 @@ $orange: hsl(9, 100%, 58%);
     animation-fill-mode: both;
 }
 
+.projects-section-title {
+    text-align: center;
+    font-family: $rubik;
+    color: $white-ivory;
+    margin-bottom: 1em;
+}
+
 .projects-body {
     font-family: $rubik;
     font-size: 1.2em;
@@ -93,6 +100,10 @@ $orange: hsl(9, 100%, 58%);
 .projects-titles {
     font-weight: 800 !important;
     text-transform: uppercase;
+}
+
+.text-muted {
+    text-transform: uppercase;  
 }
 
 .projects-btn {
