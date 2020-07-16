@@ -13,6 +13,8 @@ $rubik: 'Rubik', sans-serif;
 /*=== Colors ===*/
 $white-ivory: hsl(60, 100%, 97%);
 $orange: hsl(9, 100%, 58%);
+$orange-a: hsla(16, 87%, 62%, 0.15);
+$orange-light: hsl(16, 87%, 62%);
 
 /*=== VERY SMALL SCREEN ===*/
 /*=== HEADER ===*/
@@ -54,7 +56,7 @@ $orange: hsl(9, 100%, 58%);
 .pres-anim-jumbo {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 40s; //40 later
+    animation-delay: 38s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -80,7 +82,7 @@ $orange: hsl(9, 100%, 58%);
 .projects-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 1s; //40 later
+    animation-delay: 40s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -110,4 +112,39 @@ $orange: hsl(9, 100%, 58%);
     border-radius: 0;
     background-color: $orange !important;
     border-color: $orange !important;
+}
+
+/*=== FOOTER ===*/
+.footer-wrapper {
+    background-color: $orange-a;
+    border: 0.1em solid  $orange-light;
+}
+
+.footer-anim {
+    opacity: 0;
+    animation: fadeInUp;
+    animation-delay: 42s; //40 later
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.footer-links {
+    font-family: $rubik !important;
+    color: $white-ivory !important;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer-button {
+    background-color: orange !important;
+    border-radius: 25px !important;
+    border-color: orange !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-copy {
+    font-family: $rubik;
+    color: $white-ivory;
 }
