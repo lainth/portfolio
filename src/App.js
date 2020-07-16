@@ -6,6 +6,7 @@ import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 import './App.scss';
 
@@ -16,6 +17,7 @@ const App = () => {
       <AboutMe />
       <Presentation />
       <Projects />
+      <Footer />
     </Container>
   );
 }
