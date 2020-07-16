@@ -12,12 +12,12 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const Projects = () => {
     return (
         
-        <Row>
+        <Row className="projects-anim">
             <Col xs={12}>
                 <h2 className="projects-section-title">Projects:</h2>
             </Col>
             <Col xs={12} className="projects-wrapper">
-                <Card className="projects-anim text-center">
+                <Card className="text-center">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">React - Bootstrap - HTML/CSS</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">Quotes generator</Card.Subtitle>

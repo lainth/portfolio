@@ -7,9 +7,9 @@ import Image from 'react-bootstrap/Image';
 
 const Presentation = () => {
     return (
-        <Row>
+        <Row className="pres-anim-jumbo">
             <Col className="pres-wrapper">
-                <Jumbotron className="pres-anim-jumbo pres-style-jumbo">
+                <Jumbotron className="pres-style-jumbo">
                     <Row>
                         <Col xs={12}>
                             <Image 
