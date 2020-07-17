@@ -45,7 +45,3 @@ const Presentation = () => {
 }
 
 export default Presentation;
-
-
-
-// https://pbs.twimg.com/profile_images/1278264520264290306/kg3onpTN_400x400.jpg
