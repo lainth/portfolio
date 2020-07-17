@@ -62,7 +62,7 @@ $grey: hsl(0, 0%, 20%);
 .pres-anim-jumbo {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 40s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -92,14 +92,14 @@ $grey: hsl(0, 0%, 20%);
 .projects-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 42s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
 
 .projects-section-title {
     text-align: center;
-    font-family: $rubik;
+    font-family: $pacifico;
     color: $white-ivory;
     margin-bottom: 1em;
 }
@@ -122,6 +122,60 @@ $grey: hsl(0, 0%, 20%);
 .projects-footer a {
     color: $grey;
 }
+
+/*=== TECHNO ===*/
+.techno-anim {
+    opacity: 0;
+    animation: fadeInUp;
+    animation-delay: 1s; //40 later
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.techno-title {
+    font-family: $pacifico;
+    color: $white-ivory;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.techno-fa {
+    color: $white-ivory; 
+}
+
+.techno-text {
+    color: $white-ivory;
+    font-family: $rubik;
+}
+
+.techno-last {
+    margin-bottom: 1em;
+}
+
+.fa-git:hover {
+    color: #3E2C00;
+}
+
+.fa-react:hover {
+    color: #61DBFB;
+}
+
+.fa-js:hover {
+    color: #F0DB4F;
+}
+
+.fa-bootstrap:hover {
+    color: #563d7c;
+}
+
+.fa-css3:hover {
+    color: #264de4;
+}
+
+.fa-html5:hover {
+    color: #FF4500;
+}
+
 /*=== FOOTER ===*/
 .footer-wrapper {
     background-color: $orange-a;
@@ -131,7 +185,7 @@ $grey: hsl(0, 0%, 20%);
 .footer-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 44s; //40 later
+    animation-delay: 1s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
