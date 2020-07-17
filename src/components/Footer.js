@@ -23,13 +23,20 @@ const Footer = () => {
     return (
         <Row className="footer-anim footer-wrapper">
             <Col xs={12}>
-            <Nav className="mr-auto flex-column">
+                <p className="footer-title">Want to know more about me?</p>
+            </Col>
+            <Col xs={12} sm={4} className="text-center">
+                <Nav className="mr-auto flex-column">
                     <Nav.Link 
                         href="https://github.com/lainth"
                         target="_blank" 
                         className="footer-links">
                         <FontAwesomeIcon icon={faGithub} /> Github
                     </Nav.Link>
+                </Nav>
+            </Col>
+            <Col xs={12} sm={4} className="text-center">
+                <Nav className="mr-auto flex-column">
                     <Nav.Link 
                         href="https://twitter.com/ilainth"
                         target="_blank"
@@ -38,7 +45,7 @@ const Footer = () => {
                     </Nav.Link>
                 </Nav>
             </Col>
-            <Col xs={12} className="text-center">
+            <Col xs={12} sm={4} className="text-center">
                 <OverlayTrigger trigger="click" placement="top" overlay={popover}>
                     <Button className="footer-button">Email Me!</Button>
                 </OverlayTrigger>

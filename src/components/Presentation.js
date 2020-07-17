@@ -11,15 +11,15 @@ const Presentation = () => {
             <Col className="pres-wrapper">
                 <Jumbotron className="pres-style-jumbo">
                     <Row>
-                        <Col xs={12}>
+                        <Col xs={12} md={4} lg={4} xl={4}>
                             <Image 
                                 src="https://pbs.twimg.com/profile_images/1278264520264290306/kg3onpTN_400x400.jpg"
                                 alt="thomas-rounded-img"
                                 roundedCircle
-                                className="pres-img" 
+                                className="pres-img mx-auto d-block" 
                                 />
                         </Col>
-                        <Col xs={12}>
+                        <Col xs={12} md={8} lg={8} xl={8}>
                             <p className="pres-text">
                                 My name is Thomas, I am 28, and I'm a developer from France.
                             </p>
