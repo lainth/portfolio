@@ -11,11 +11,22 @@ $inconsolata: 'Inconsolata', monospace;
 $rubik: 'Rubik', sans-serif;
 
 /*=== Colors ===*/
+/* COLORS WITH TRANSPARENCY*/
+$orange-a: hsla(16, 87%, 62%, 0.15);
+
+/*GENERAL THEME */
 $white-ivory: hsl(60, 100%, 97%);
 $orange: hsl(9, 100%, 58%);
-$orange-a: hsla(16, 87%, 62%, 0.15);
 $orange-light: hsl(16, 87%, 62%);
 $grey: hsl(0, 0%, 20%);
+
+/* LOGOS */
+$git-color: hsl(43, 100%, 12%);
+$react-color: hsl(192, 95%, 68%);
+$js-color: hsl(52, 84%, 63%);
+$bootstrap-color: hsl(264, 34%, 36%);
+$css-color: hsl(228, 78%, 52%);
+$htlm-color: hsl(16, 100%, 50%);
 
 /*=== GLOBAL STYLE ===*/
 .card {
@@ -62,7 +73,7 @@ $grey: hsl(0, 0%, 20%);
 .pres-anim-jumbo {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 1s; //40 later
+    animation-delay: 40s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -74,6 +85,7 @@ $grey: hsl(0, 0%, 20%);
 
 .pres-img {
     width: 100%;
+    box-shadow: 0px 0px 0px 5px $white-ivory;
 }
 
 .pres-text {
@@ -86,13 +98,13 @@ $grey: hsl(0, 0%, 20%);
 
 /*=== PROJECTS ===*/
 .projects-wrapper {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
 }
 
 .projects-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 1s; //40 later
+    animation-delay: 42s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -127,7 +139,7 @@ $grey: hsl(0, 0%, 20%);
 .techno-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 1s; //40 later
+    animation-delay: 44s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
@@ -149,31 +161,31 @@ $grey: hsl(0, 0%, 20%);
 }
 
 .techno-last {
-    margin-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 .fa-git:hover {
-    color: #3E2C00;
+    color: $git-color;
 }
 
 .fa-react:hover {
-    color: #61DBFB;
+    color: $react-color;
 }
 
 .fa-js:hover {
-    color: #F0DB4F;
+    color: $js-color;
 }
 
 .fa-bootstrap:hover {
-    color: #563d7c;
+    color: $bootstrap-color;
 }
 
 .fa-css3:hover {
-    color: #264de4;
+    color: $css-color;
 }
 
 .fa-html5:hover {
-    color: #FF4500;
+    color: $htlm-color;
 }
 
 /*=== FOOTER ===*/
@@ -185,7 +197,7 @@ $grey: hsl(0, 0%, 20%);
 .footer-anim {
     opacity: 0;
     animation: fadeInUp;
-    animation-delay: 1s; //40 later
+    animation-delay: 46s; //40 later
     animation-duration: 2s;
     animation-fill-mode: both;
 }
