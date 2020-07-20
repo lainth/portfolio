@@ -2,7 +2,7 @@ import React from 'react';
 
 import Container from 'react-bootstrap/Container';
 
-import Header from './components/Header';
+import NavBar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
 import Projects from './components/Projects';
@@ -14,7 +14,7 @@ import './App.scss';
 const App = () => {
   return (
     <Container fluid>
-      <Header />
+      <NavBar />
       <AboutMe />
       <Presentation />
       <Projects />

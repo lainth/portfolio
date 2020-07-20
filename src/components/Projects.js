@@ -6,17 +6,17 @@ import Card from 'react-bootstrap/Card';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import { faPlay} from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
     return (
         
-        <Row className="projects-anim">
+        <Row className="projects-anim projects-wrapper">
             <Col xs={12}>
-                <h2 className="projects-section-title">Projects:</h2>
+                <h2 className="projects-section-title">Projects</h2>
             </Col>
-            <Col xs={12} sm={4} className="projects-wrapper">
-                <Card className="text-center">
+            <Col xs={12} sm={6}>
+                <Card className="text-center projects-card-border-top projects-card-border-right">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Quotes generator</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
@@ -24,51 +24,102 @@ const Projects = () => {
                             A mini application fetching quotes from an API and rendering them via 
                             React.
                         </Card.Text>
+                        <Card.Footer>
+                            <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faGithub} /> Code here
+                            </a>
+                            <br/>
+                            <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faPlay} /> Live version
+                            </a>
+                        </Card.Footer>
                     </Card.Body>
-                    <Card.Footer className="projects-footer">
-                    <a 
-                        href="#" 
-                        target="_blank">
-                        <FontAwesomeIcon icon={faGithub} /> Check it out
-                    </a>
-                    </Card.Footer>  
                 </Card>
             </Col>
-            <Col xs={12} sm={4} className="projects-wrapper">
-                <Card className="projects-anim text-center">
+            <Col xs={12} sm={6}>
+                <Card className="text-center projects-card-border-top">
                     <Card.Body className="projects-body">
-                        <Card.Title className="projects-titles">Wikipedia Viewer</Card.Title>
+                        <Card.Title className="projects-titles">Quotes generator</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
                         <Card.Text>
-                            An application using Wikipedia API in order to display a random article
-                            or specific one.
-                        </Card.Text>                  
-                    </Card.Body>
-                    <Card.Footer className="projects-footer">
+                            A mini application fetching quotes from an API and rendering them via 
+                            React.
+                        </Card.Text>
+                        <Card.Footer>
                         <a 
                             href="#" 
-                            target="_blank">
-                            <FontAwesomeIcon icon={faGithub} /> Check it out
-                        </a>
-                    </Card.Footer>  
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faGithub} /> Code here
+                            </a>
+                            <br/>
+                            <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faPlay} /> Live version
+                            </a>
+                        </Card.Footer>
+                    </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} sm={4} className="projects-wrapper">
-                <Card className="projects-anim text-center">
+            <Col xs={12} sm={6}>
+                <Card className="text-center projects-card-border-top projects-card-border-rtop projects-card-border-right ">
+                    <Card.Body className="projects-body">
+                        <Card.Title className="projects-titles">Quotes generator</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
+                        <Card.Text>
+                            A mini application fetching quotes from an API and rendering them via 
+                            React.
+                        </Card.Text>
+                        <Card.Footer>
+                        <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faGithub} /> Code here
+                            </a>
+                            <br/>
+                            <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faPlay} /> Live version
+                            </a>
+                        </Card.Footer>  
+                    </Card.Body>
+                </Card>
+            </Col>
+            <Col xs={12} sm={6}>
+                <Card className="text-center projects-card-border-bot projects-card-border-rtop">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Portfolio</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
                         <Card.Text>
                             The first version of my portfolio.
-                        </Card.Text>              
-                    </Card.Body>
-                    <Card.Footer className="projects-footer">
+                        </Card.Text>             
+                        <Card.Footer>
                         <a 
-                            href="https://github.com/lainth/portfolio" 
-                            target="_blank">
-                            <FontAwesomeIcon icon={faGithub} /> Check it out
-                        </a>
-                    </Card.Footer>  
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faGithub} /> Code here
+                            </a>
+                            <br/>
+                            <a 
+                            href="#" 
+                            target="_blank"
+                            className="projects-link">
+                            <FontAwesomeIcon icon={faPlay} /> Live version
+                            </a>
+                        </Card.Footer>
+                    </Card.Body>
                 </Card>
             </Col>
         </Row>
