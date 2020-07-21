@@ -2,46 +2,45 @@ import React from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Image from 'react-bootstrap/Image';
 
-const Presentation = () => {
-    return (
-        <Row className="pres-anim-jumbo">
-            <Col className="pres-wrapper">
-                <Jumbotron className="pres-style-jumbo">
-                    <Row>
-                        <Col xs={12} md={4} lg={4} xl={4}>
-                            <Image 
-                                src="https://pbs.twimg.com/profile_images/1278264520264290306/kg3onpTN_400x400.jpg"
-                                alt="thomas-rounded-img"
-                                roundedCircle
-                                className="pres-img mx-auto d-block" 
-                                />
-                        </Col>
-                        <Col xs={12} md={8} lg={8} xl={8}>
-                            <p className="pres-text">
-                                My name is Thomas, I am 28, and I'm a developer from France.
-                            </p>
-                            <p className="pres-text">
-                                I studied Computer Science for a couple of years before dropping out
-                                of college and taking a gap year in Australia.
-                            </p>
-                            <p className="pres-text">
-                                When I came back, I found a job as a waiter in a 1 starred
-                                Michelin restaurant.
-                                Eventually, I realised this job and this life were never
-                                meant for me.
-                            </p>
-                            <p className="pres-text">
-                                I haven't spend a day without coding ever since...
-                            </p>
-                        </Col>
-                    </Row>
-                </Jumbotron>
-            </Col>
-        </Row>
-    );
+import ReactRevealText from 'react-reveal-text';
+
+class Presentation extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            show: false
+        };
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+          this.setState({ show: true });
+        }, 2000);
+      }
+
+    render() {
+        return (
+            <Row id="pres" name="pres" className="pres-anim pres-wrapper">
+                <Col xs={12}>
+                <h2 className="pres-section-title">About Me</h2>
+                    <p className="pres-text">
+                        <ReactRevealText show={this.state.show}>
+                            I've earned a Bachelor degree in Computer Science in 2014.
+                            Continued my studies into a Master degree, and dropped out,
+                            a year and half after.
+                            I know, at this point, you must've already some questions popping up 
+                            in the back of your head.
+                            And yes, those questions will be answered in due time.
+                            In order not to turn this portoflio into a Medium article, I will
+                            simply say, that I realised my mistake, and I am working on fixing it.
+                        </ReactRevealText>
+                    </p>
+                </Col>
+            </Row>
+        );
+    }
 }
 
 export default Presentation;

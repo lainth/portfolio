@@ -13,10 +13,13 @@
     "@testing-library/user-event": "^7.2.1",
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.13.1",
+    "react-responsive": "^8.1.0",
+    "react-reveal-text": "^0.1.1",
     "react-scripts": "3.4.1",
     "react-typist": "^2.0.5"
   },
