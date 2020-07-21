@@ -18,11 +18,11 @@ const Projects = () => {
             <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
                 <Card className="text-center projects-card-border-top projects-card-border-right">
                     <Card.Body className="projects-body">
-                        <Card.Title className="projects-titles">Quotes generator</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
+                        <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Lorem - Lorem - Lorem</Card.Subtitle>
                         <Card.Text>
-                            A mini application fetching quotes from an API and rendering them via 
-                            React.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
                         </Card.Text>
                         <Card.Footer>
                             <a 
@@ -43,16 +43,16 @@ const Projects = () => {
                 </Card>
             </Col>
             <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-                <Card className="text-center projects-card-border-top">
+                <Card className="text-center projects-card-border-top projects-card-border-right">
                     <Card.Body className="projects-body">
-                        <Card.Title className="projects-titles">Quotes generator</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
+                        <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Lorem - Lorem - Lorem</Card.Subtitle>
                         <Card.Text>
-                            A mini application fetching quotes from an API and rendering them via 
-                            React.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
                         </Card.Text>
                         <Card.Footer>
-                        <a 
+                            <a 
                             href="#" 
                             target="_blank"
                             className="projects-link">
@@ -70,16 +70,16 @@ const Projects = () => {
                 </Card>
             </Col>
             <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-                <Card className="text-center projects-card-border-top projects-card-border-rtop projects-card-border-right ">
+                <Card className="text-center projects-card-border-top projects-card-border-right projects-card-border-rtop">
                     <Card.Body className="projects-body">
-                        <Card.Title className="projects-titles">Quotes generator</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
+                        <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Lorem - Lorem - Lorem</Card.Subtitle>
                         <Card.Text>
-                            A mini application fetching quotes from an API and rendering them via 
-                            React.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
                         </Card.Text>
                         <Card.Footer>
-                        <a 
+                            <a 
                             href="#" 
                             target="_blank"
                             className="projects-link">
@@ -92,20 +92,21 @@ const Projects = () => {
                             className="projects-link">
                             <FontAwesomeIcon icon={faPlay} /> Live version
                             </a>
-                        </Card.Footer>  
+                        </Card.Footer>
                     </Card.Body>
                 </Card>
             </Col>
             <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-                <Card className="text-center projects-card-border-bot projects-card-border-rtop">
+                <Card className="text-center projects-card-border-top projects-card-border-bot projects-card-border-rtop">
                     <Card.Body className="projects-body">
-                        <Card.Title className="projects-titles">Portfolio</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">React - Bootstrap - HTML/CSS</Card.Subtitle>
+                        <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Lorem - Lorem - Lorem</Card.Subtitle>
                         <Card.Text>
-                            The first version of my portfolio.
-                        </Card.Text>             
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua.
+                        </Card.Text>
                         <Card.Footer>
-                        <a 
+                            <a 
                             href="#" 
                             target="_blank"
                             className="projects-link">

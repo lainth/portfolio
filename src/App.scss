@@ -79,6 +79,7 @@ $htlm-color: hsl(16, 100%, 50%);
     align-items: center;
     justify-items: center;
 }
+
 /*=== PRESENTATION ===*/
 .pres-wrapper {
   background-color: $white-ivory;
@@ -204,7 +205,6 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 /*=== FOOTER ===*/
-
 .footer-title {
     margin-top: 1em;
     font-family: $rubik;
@@ -235,7 +235,7 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 /*=== MEDIA QUERIES ===*/
-/*=== BORDER CROSS EFFECT FROM SM SIZE ===*/
+/*=== BORDER-CROSS EFFECT FROM SM SIZE ===*/
 @media screen 
     and (min-width: 576px) {
         .projects-card-border-top {
