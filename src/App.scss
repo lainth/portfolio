@@ -19,6 +19,7 @@ $white-ivory: hsl(60, 100%, 97%);
 $orange: hsl(9, 100%, 58%);
 $orange-light: hsl(16, 87%, 62%);
 $grey: hsl(0, 0%, 20%);
+$black: hsl(0, 100%, 0%);
 
 /* LOGOS */
 $git-color: hsl(43, 100%, 12%);
@@ -29,6 +30,28 @@ $css-color: hsl(228, 78%, 52%);
 $htlm-color: hsl(16, 100%, 50%);
 
 /*=== GLOBAL STYLE ===*/
+#scrollup {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 25px !important;
+    border: none !important;
+    background-color: hsl(9, 100%, 58%) !important;
+    color: $white-ivory;
+    z-index: 99;
+    box-shadow: 0 0 7px -2px $black;
+}
+
+.scroll-link {
+    color: $white-ivory;
+    text-decoration: none;
+}
+
+.scroll-link:hover {
+    color: $white-ivory; 
+}
+
 .card {
     height: 100%;
     border-radius: 0px !important;
@@ -49,16 +72,17 @@ $htlm-color: hsl(16, 100%, 50%);
 .about-text {
     color: $white-ivory;
     font-family: $press-start;
+    position: relative;
     text-align: center;
     font-size: 1.6em;
-    position: absolute;
-    top:50%;
-    left: 0%;
-    transform:translate(0%, -85%);
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 /*=== PRESENTATION ===*/
 .pres-wrapper {
   background-color: $white-ivory;
+  margin-top: 5%;
 }
 /*
 .pres-anim {
@@ -171,7 +195,7 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 .techno-text {
-    color: $white-ivory;
+    color: $grey;
     font-family: $rubik;
 }
 
@@ -204,10 +228,6 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 /*=== FOOTER ===*/
-.footer-wrapper {
-    background-color: $orange-a;
-    border: 0.1em solid  $orange-light;
-}
 /*
 .footer-anim {
     opacity: 0;
@@ -267,7 +287,7 @@ $htlm-color: hsl(16, 100%, 50%);
 
 /* === NAVIGATION === */
 @media screen 
-    and (max-width: 991px) {
+    and (max-width: 992px) {
         .navigation {
             visibility: hidden;
         }
@@ -330,39 +350,44 @@ $htlm-color: hsl(16, 100%, 50%);
         .download-button {
             background: linear-gradient(to bottom right, hsl(346, 100%, 63%), hsl(9, 100%, 58%)) !important;
             border-radius: 25px !important;
-            border-color: orange !important;
             font-family: $rubik;
         }
-
     }
 
 /*=== SIZE ALL DEVICES ===*/
-@media screen 
-    and (min-width: 320px) {
-        .about-text{ 
-            bottom: 36%;
+@media screen
+    and (min-width: 300px) {
+        .pres-text {
+            text-align: justify;
         }
     }
 
-@media screen 
-    and (min-width: 360px) {
-        .about-text{ 
-            bottom: 42%;
+ @media screen
+    and (max-width: 450px) {
+        .footer-wrapper {
+            margin-bottom: 11%;
         }
     }
-
+    
 @media screen 
-    and (min-width: 375px) {
-        .about-text{ 
-            bottom: 38%;
-            left: 5%;
+    and (min-width: 1440px) {
+        .about-text {
+            left: 2%;
             font-size: 2em;
         }
     }
 
 @media screen 
-    and (min-width: 411px) {
-        .about-text{ 
+    and (min-width: 1600px) {
+        .about-text {
+            margin-left: 6%;
             font-size: 2em;
+        }
+    }
+
+@media screen 
+    and (min-width: 2560px) {
+        .about-text {
+            margin-left: 20%;
         }
     }
