@@ -4,26 +4,31 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import ReactRevealText from 'react-reveal-text';
+import VizSensor from 'react-visibility-sensor';
 
 class Presentation extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {
             show: false
         };
+        this.keepChange = this.keepChange.bind(this);
     }
 
-    componentDidMount() {
-        setTimeout(() => {
-          this.setState({ show: true });
-        }, 2000);
-      }
+    keepChange(isVisible) {
+        if (isVisible) {
+            this.setState({show: true})
+        }
+    }
 
     render() {
         return (
-            <Row id="pres" name="pres" className="pres-anim pres-wrapper">
-                <Col xs={12}>
+            <Row id="pres" name="pres" className="pres-wrapper">
+                <VizSensor
+                    active={this.show}
+                    onChange={this.keepChange}
+                >
+                <Col xs={12} id="test">
                 <h2 className="pres-section-title">About Me</h2>
                     <p className="pres-text">
                         <ReactRevealText show={this.state.show}>
@@ -38,6 +43,7 @@ class Presentation extends React.Component {
                         </ReactRevealText>
                     </p>
                 </Col>
+                </VizSensor>
             </Row>
         );
     }

@@ -11,11 +11,11 @@ import { faPlay} from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
     return (
         
-        <Row id="projects" name="projects" className="projects-anim projects-wrapper">
-            <Col xs={12}>
+        <Row id="projects" name="projects" className="projects-wrapper">
+            <Col xs={12} data-aos="zoom-in" data-aos-once={true}>
                 <h2 className="projects-section-title">Projects</h2>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
                 <Card className="text-center projects-card-border-top projects-card-border-right">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Quotes generator</Card.Title>
@@ -42,7 +42,7 @@ const Projects = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
                 <Card className="text-center projects-card-border-top">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Quotes generator</Card.Title>
@@ -69,7 +69,7 @@ const Projects = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
                 <Card className="text-center projects-card-border-top projects-card-border-rtop projects-card-border-right ">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Quotes generator</Card.Title>
@@ -96,7 +96,7 @@ const Projects = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={12} sm={6}>
+            <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
                 <Card className="text-center projects-card-border-bot projects-card-border-rtop">
                     <Card.Body className="projects-body">
                         <Card.Title className="projects-titles">Portfolio</Card.Title>
