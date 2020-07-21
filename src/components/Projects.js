@@ -11,7 +11,7 @@ import { faPlay} from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
     return (
         
-        <Row className="projects-anim projects-wrapper">
+        <Row id="projects" name="projects" className="projects-anim projects-wrapper">
             <Col xs={12}>
                 <h2 className="projects-section-title">Projects</h2>
             </Col>

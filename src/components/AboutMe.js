@@ -6,14 +6,17 @@ import Typist from 'react-typist';
 
 const AboutMe = () => {
     return (
-        <Row className="about-wrapper">
-            <Col>
-                <div className="about-text">
+        <Row id="about" name="about" className="about-wrapper">
+            <Col className="about-text">
+                <div>
                     <Typist cursor={{hideWhenDone: true}}>
                         <span>Welcome.</span>
                         <Typist.Delay ms={1000} />
                         <br />
                         <span>I'm Thomas, a web developer from France.</span>
+                        <Typist.Delay ms={1000} />
+                        <br />
+                        <span>I enjoy solving problems.</span>
                         <Typist.Delay ms={1000} />
                         <br />
                         <span>Let's get to know each other.</span>

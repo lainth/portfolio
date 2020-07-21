@@ -13,7 +13,7 @@ import { faGit } from '@fortawesome/free-brands-svg-icons';
 
 const Techno = () => {
     return(
-        <Row className="techno-wrapper techno-anim">
+        <Row id="techno" name="techno" className="techno-wrapper techno-anim">
             <Col xs={12}>
                 <h2 className="techno-title">Tech I'm using:</h2>
             </Col>

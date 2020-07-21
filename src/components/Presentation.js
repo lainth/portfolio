@@ -22,8 +22,8 @@ class Presentation extends React.Component {
 
     render() {
         return (
-            <Row className="pres-anim">
-                <Col xs={12} className="pres-wrapper">
+            <Row id="pres" name="pres" className="pres-anim pres-wrapper">
+                <Col xs={12}>
                 <h2 className="pres-section-title">About Me</h2>
                     <p className="pres-text">
                         <ReactRevealText show={this.state.show}>

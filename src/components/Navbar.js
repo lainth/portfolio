@@ -10,13 +10,13 @@ const NavBar = () => {
                 <p className="nav-subtitle">Web Developer</p>
             </div>
             <div className="center-link">
-                <a href="#about">About</a>
-                <a href="#services">Projects</a>
-                <a href="#clients">Technologies</a>
+                <a href="#pres">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#techno">Technologies</a>
                 <a href="#contact">Contact</a>
             </div>
             <div className="download-link center-block">
-                <Button className="download-button">Download my resume</Button>
+                <Button className="download-button border-white">Download my resume</Button>
             </div>
         </div>
     );
