@@ -14,16 +14,16 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 const popover = (
     <Popover id="popover-mail">
       <Popover.Content>
-        thomas.laine25@gmail.com
+        xxxx.xxxx@xxxx.xxx
       </Popover.Content>
     </Popover>
   );
 
 const Footer = () => {
     return (
-        <Row id="contact" name="contact" className="footer-anim footer-wrapper">
+        <Row id="contact" name="contact" className="footer-wrapper">
             <Col xs={12}>
-                <p className="footer-title">Want to know more about me?</p>
+                <p className="footer-title">Want to get in touch?</p>
             </Col>
             <Col xs={12} sm={4} className="text-center">
                 <Nav className="mr-auto flex-column">

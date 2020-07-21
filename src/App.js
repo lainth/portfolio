@@ -10,7 +10,7 @@ import Techno from './components/Techno';
 import Footer from './components/Footer';
 import MediaQuery from 'react-responsive';
 import $ from 'jquery';
-
+import AOS from 'aos';
 import './App.scss';
 
 
@@ -19,20 +19,30 @@ $(window).on('beforeunload', function() {
   $(window).scrollTop(0);
 });
 
-const App = () => {
-  return (
-    <Container fluid>
-      <MediaQuery query="(min-width: 992px)">
-        <NavBar />
-      </MediaQuery>
-      <AboutMe />
-      <Presentation />
-      <Projects />
-      <Techno />
-      <Footer />
-      <ScrollUp />
-    </Container>
-  );
+
+class App extends React.Component {
+
+    componentDidMount() {
+        AOS.init({
+          duration : 2000
+        })
+    }
+    
+  render () {
+    return (
+      <Container fluid>
+        <MediaQuery query="(min-width: 992px)">
+          <NavBar />
+        </MediaQuery>
+        <AboutMe />
+        <Presentation />
+        <Projects />
+        <Techno />
+        <Footer />
+        <ScrollUp />
+      </Container>
+    );
+  }
 }
 
 export default App;

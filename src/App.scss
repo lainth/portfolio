@@ -79,20 +79,13 @@ $htlm-color: hsl(16, 100%, 50%);
     align-items: center;
     justify-items: center;
 }
+
 /*=== PRESENTATION ===*/
 .pres-wrapper {
   background-color: $white-ivory;
   margin-top: 5%;
 }
-/*
-.pres-anim {
-    opacity: 0;
-    animation: fadeInUp;
-    animation-delay: 1s; //40 later
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-*/
+
 .pres-section-title {
     text-align: center;
     font-family: $pacifico;
@@ -120,15 +113,7 @@ $htlm-color: hsl(16, 100%, 50%);
     padding-right: 0px !important;
     padding-left: 0px !important;
 }
-/*
-.projects-anim {
-    opacity: 0;
-    animation: fadeInUp;
-    animation-delay: 1s; //40 later
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-*/
+
 .projects-section-title {
     text-align: center;
     font-family: $pacifico;
@@ -172,15 +157,7 @@ $htlm-color: hsl(16, 100%, 50%);
 .techno-wrapper {
     background-color: $white-ivory;
 }
-/*
-.techno-anim {
-    opacity: 0;
-    animation: fadeInUp;
-    animation-delay: 1s; //40 later
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-*/
+
 .techno-title {
     font-family: $pacifico;
     color: $grey;
@@ -228,15 +205,6 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 /*=== FOOTER ===*/
-/*
-.footer-anim {
-    opacity: 0;
-    animation: fadeInUp;
-    animation-delay: 1s; //40 later
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-*/
 .footer-title {
     margin-top: 1em;
     font-family: $rubik;
@@ -267,7 +235,7 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 /*=== MEDIA QUERIES ===*/
-/*=== BORDER CROSS EFFECT FROM SM SIZE ===*/
+/*=== BORDER-CROSS EFFECT FROM SM SIZE ===*/
 @media screen 
     and (min-width: 576px) {
         .projects-card-border-top {
