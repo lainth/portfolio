@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
-import MyParticles from './components/Particles';
 import NavBar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
@@ -30,7 +29,6 @@ class App extends React.Component {
   render () {
     return (
       <Container fluid>
-        <MyParticles />
         <MediaQuery query="(min-width: 992px)">
           <NavBar />
         </MediaQuery>
