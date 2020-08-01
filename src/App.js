@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
-import ScrollUp from './components/ScrollUp';
+import MyParticles from './components/Particles';
 import NavBar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
@@ -12,7 +12,6 @@ import MediaQuery from 'react-responsive';
 import $ from 'jquery';
 import AOS from 'aos';
 import './App.scss';
-
 
 // Reset the view to the top at each browser refresh
 $(window).on('beforeunload', function() {
@@ -31,6 +30,7 @@ class App extends React.Component {
   render () {
     return (
       <Container fluid>
+        <MyParticles />
         <MediaQuery query="(min-width: 992px)">
           <NavBar />
         </MediaQuery>
@@ -39,7 +39,6 @@ class App extends React.Component {
         <Projects />
         <Techno />
         <Footer />
-        <ScrollUp />
       </Container>
     );
   }

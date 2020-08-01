@@ -19,7 +19,7 @@ $white-ivory: hsl(60, 100%, 97%);
 $orange: hsl(9, 100%, 58%);
 $orange-light: hsl(16, 87%, 62%);
 $grey: hsl(0, 0%, 20%);
-$black: hsl(0, 100%, 0%);
+$black: rgb(8, 3, 3);
 
 /* LOGOS */
 $git-color: hsl(43, 100%, 12%);
@@ -30,26 +30,8 @@ $css-color: hsl(228, 78%, 52%);
 $htlm-color: hsl(16, 100%, 50%);
 
 /*=== GLOBAL STYLE ===*/
-#scrollup {
-    display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 25px !important;
-    border: none !important;
-    background-color: hsl(9, 100%, 58%) !important;
-    color: $white-ivory;
-    z-index: 99;
-    box-shadow: 0 0 7px -2px $black;
-}
-
-.scroll-link {
-    color: $white-ivory;
-    text-decoration: none;
-}
-
-.scroll-link:hover {
-    color: $white-ivory; 
+.container-fluid {
+    background-color: $white-ivory;
 }
 
 .card {
@@ -69,8 +51,15 @@ $htlm-color: hsl(16, 100%, 50%);
     height: 100vh;
 }
 
+#tsparticles {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: $white-ivory;
+}
+
 .about-text {
-    color: $white-ivory;
+    color: $grey;
     font-family: $press-start;
     position: relative;
     text-align: center;
@@ -208,14 +197,14 @@ $htlm-color: hsl(16, 100%, 50%);
 .footer-title {
     margin-top: 1em;
     font-family: $rubik;
-    color: $white-ivory;
+    color: $grey;
     text-align: center;
     font-size: 1.2em;
 }
 
 .footer-links {
     font-family: $rubik !important;
-    color: $white-ivory !important;
+    color: $grey !important;
     font-size: 1.2em;
     text-decoration: underline;
 }
@@ -230,7 +219,7 @@ $htlm-color: hsl(16, 100%, 50%);
 
 .footer-copy {
     font-family: $rubik;
-    color: $white-ivory;
+    color: $grey;
     margin-bottom: 1em;
 }
 
@@ -329,14 +318,7 @@ $htlm-color: hsl(16, 100%, 50%);
             text-align: justify;
         }
     }
-
- @media screen
-    and (max-width: 450px) {
-        .footer-wrapper {
-            margin-bottom: 11%;
-        }
-    }
-    
+   
 @media screen 
     and (min-width: 1440px) {
         .about-text {
