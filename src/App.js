@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Container from 'react-bootstrap/Container';
+import MobileNav from './components/MobileNav';
 import NavBar from './components/Navbar';
 import AboutMe from './components/AboutMe';
 import Presentation from './components/Presentation';
@@ -29,6 +30,9 @@ class App extends React.Component {
   render () {
     return (
       <Container fluid>
+        <MediaQuery query="(max-width: 992px)">
+          <MobileNav />
+        </MediaQuery>
         <MediaQuery query="(min-width: 992px)">
           <NavBar />
         </MediaQuery>
