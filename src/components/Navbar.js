@@ -10,6 +10,7 @@ const NavBar = () => {
                 <p className="nav-subtitle">Web Developer</p>
             </div>
             <div className="center-link">
+                <a href="#about">Home</a>
                 <a href="#pres">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#techno">Technologies</a>
