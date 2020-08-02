@@ -15,7 +15,7 @@ const Techno = () => {
     return(
         <Row id="techno" name="techno" className="techno-wrapper">
             <Col xs={12}>
-                <h2 className="techno-title" data-aos="zoom-in" data-aos-once={true}>Tech I'm using:</h2>
+                <h2 className="techno-title" data-aos="zoom-in" data-aos-once={true}>Skills:</h2>
             </Col>
             <Col xs={12} sm={4} lg={2} className="text-center" data-aos="zoom-in" data-aos-once={true}>
                 <FontAwesomeIcon icon={faGit} size="6x" className="techno-fa" />
