@@ -48,20 +48,14 @@ class Presentation extends React.Component {
           <Col xs={12} xl={8}>
             <p className="pres-text">
               <ReactRevealText show={this.state.show}>
-                I've earned a Bachelor degree in Computer Science in 2014.
-                Continued my studies into a Master degree, and dropped out, a
-                year and half after. I know, at this point, you must've already
-                some questions popping up in the back of your head. And yes,
-                those questions will be answered in due time. In order not to
-                turn this portoflio into a Medium article, I will simply say,
-                that I realised my mistake, and I am working on fixing it. I've
-                earned a Bachelor degree in Computer Science in 2014. Continued
-                my studies into a Master degree, and dropped out, a year and
-                half after. I know, at this point, you must've already some
-                questions popping up in the back of your head. And yes, those
-                questions will be answered in due time. In order not to turn
-                this portoflio into a Medium article, I will simply say, that I
-                realised my mistake, and I am working on fixing it.
+                I am a savvy developper who enjoy learning new things on a daily
+                basis, my goal is to become a full stack engineer able to solve the
+                vast majority of the problems I encounter. In order to do so, I
+                decided to specialise, in the first place, in Front end and UX
+                design. Once, I'm comfortable working on Front end technologies,
+                I intend to learn and work on Back end oriented solutions.
+                System design, Algorithms and Data Dtructures are skills that I am
+                really eager to improve.
               </ReactRevealText>
             </p>
           </Col>
