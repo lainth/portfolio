@@ -1,33 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import Container from 'react-bootstrap/Container';
-import MobileNav from './components/MobileNav';
-import NavBar from './components/Navbar';
-import AboutMe from './components/AboutMe';
-import Presentation from './components/Presentation';
-import Projects from './components/Projects';
-import Techno from './components/Techno';
-import Footer from './components/Footer';
-import MediaQuery from 'react-responsive';
-import $ from 'jquery';
-import AOS from 'aos';
-import './App.scss';
+import Container from "react-bootstrap/Container";
+import MobileNav from "./components/MobileNav";
+import NavBar from "./components/Navbar";
+import AboutMe from "./components/AboutMe";
+import Presentation from "./components/Presentation";
+import Projects from "./components/Projects";
+import Techno from "./components/Techno";
+import Footer from "./components/Footer";
+import MediaQuery from "react-responsive";
+import $ from "jquery";
+import AOS from "aos";
+import "./App.scss";
 
 // Reset the view to the top at each browser refresh
-$(window).on('beforeunload', function() {
+$(window).on("beforeunload", function () {
   $(window).scrollTop(0);
 });
 
-
 class App extends React.Component {
+  componentDidMount() {
+    AOS.init({
+      duration: 2000,
+    });
+  }
 
-    componentDidMount() {
-        AOS.init({
-          duration : 2000
-        })
-    }
-    
-  render () {
+  render() {
     return (
       <Container fluid>
         <MediaQuery query="(max-width: 992px)">
