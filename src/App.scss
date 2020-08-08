@@ -20,7 +20,10 @@ $orange: hsl(9, 100%, 58%);
 $orange-light: hsl(16, 87%, 62%);
 $grey: hsl(0, 0%, 20%);
 $black: hsl(0, 0%, 0%);
+$lighter-black: hsl(0, 0%, 2%);
 $pink-red: hsl(350, 79.2%, 60.4%);
+$legion-green: hsl(94, 100%, 47%);
+$darker-legion-green: hsl(89, 76%, 48%);
 
 /* LOGOS */
 $git-color: hsl(43, 100%, 12%);
@@ -78,7 +81,7 @@ $htlm-color: hsl(16, 100%, 50%);
 .pres-section-title {
   text-align: center;
   font-family: $pacifico;
-  color: $white-ivory;
+  color: $legion-green;
   margin-bottom: 1em;
   margin-top: 1em;
   font-size: 3.5em;
@@ -106,7 +109,7 @@ $htlm-color: hsl(16, 100%, 50%);
 .projects-section-title {
   text-align: center;
   font-family: $pacifico;
-  color: $white-ivory;
+  color: $legion-green;
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 3.5em;
@@ -149,7 +152,7 @@ $htlm-color: hsl(16, 100%, 50%);
 
 .techno-title {
   font-family: $pacifico;
-  color: $white-ivory;
+  color: $legion-green;
   text-align: center;
   margin-top: 2em;
   margin-bottom: 1em;
@@ -197,9 +200,9 @@ $htlm-color: hsl(16, 100%, 50%);
 .footer-title {
   margin-top: 1em;
   font-family: $rubik;
-  color: $white-ivory;
+  color: $darker-legion-green;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 .footer-links {
@@ -210,9 +213,9 @@ $htlm-color: hsl(16, 100%, 50%);
 }
 
 .footer-button {
-  background-color: orange !important;
+  background-color: $darker-legion-green !important;
   border-radius: 25px !important;
-  border-color: orange !important;
+  border: none !important;
   margin-top: 0.5em;
   margin-bottom: 1.5em;
 }
@@ -252,7 +255,7 @@ $htlm-color: hsl(16, 100%, 50%);
   }
 
   .navigation {
-    background-color: $black !important;
+    background-color: $lighter-black !important;
     height: 100% !important;
     width: 18em !important;
     position: fixed !important;
@@ -276,8 +279,8 @@ $htlm-color: hsl(16, 100%, 50%);
   .nav-subtitle {
     font-family: $rubik;
     font-weight: 600;
-    font-size: 1.5em;
-    color: $white-ivory;
+    font-size: 2em;
+    color: $darker-legion-green;
   }
 
   .center-link {
@@ -303,7 +306,7 @@ $htlm-color: hsl(16, 100%, 50%);
   .download-button {
     border: none !important;
     border-radius: 0 !important;
-    background-color: $pink-red !important;
+    background-color: $darker-legion-green !important;
     font-family: $rubik;
   }
 }
