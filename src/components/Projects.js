@@ -34,7 +34,7 @@ const Projects = () => {
         </Card>
       </Col>
       <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top projects-card-border-right">
+        <Card className="text-center projects-card-border-top">
           <Card.Body className="projects-body">
             <Card.Title className="projects-titles">
               Wikipedia Viewer
@@ -44,7 +44,7 @@ const Projects = () => {
             </Card.Subtitle>
             <Card.Text>
               A small application using Wikipedia API. It allows a user to read
-              a random articlem or search for a specific one.
+              a random article or search for a specific one.
             </Card.Text>
             <Card.Footer>
               <a href="https://github.com/lainth/wikipedia-viewer" target="_blank" className="projects-link">
