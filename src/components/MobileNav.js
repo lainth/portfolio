@@ -91,7 +91,7 @@ const StyledAnchor = styled.a`
   color: white;
 
   &:hover {
-    color: yellow;
+    color: hsl(94, 100%, 47%);
   }
 `;
 
