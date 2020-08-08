@@ -108,7 +108,7 @@ const MyParticles = () => (
           mode: "bounce",
         },
         color: {
-          value: "random",
+          value: "#7fd81e",
           animation: {
             enable: false,
             speed: 1,
