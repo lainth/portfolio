@@ -1,20 +1,21 @@
-/*Background Gradient Color*/
-$bg-gradient: repeating-linear-gradient(to bottom right, hsl(346, 100%, 63%), hsl(9, 100%, 58%)); 
-
 html {
   height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $bg-gradient;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: hsl(60, 100%, 97%);
 }
 
 code {

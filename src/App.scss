@@ -1,14 +1,14 @@
 /*=== Fonts Imports ===*/
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 /*=== Fonts Variables ===*/
-$pacifico: 'Pacifico', cursive;
-$press-start: 'Press Start 2P', cursive;
-$inconsolata: 'Inconsolata', monospace;
-$rubik: 'Rubik', sans-serif;
+$pacifico: "Pacifico", cursive;
+$press-start: "Press Start 2P", cursive;
+$inconsolata: "Inconsolata", monospace;
+$rubik: "Rubik", sans-serif;
 
 /*=== Colors ===*/
 /* COLORS WITH TRANSPARENCY*/
@@ -19,7 +19,11 @@ $white-ivory: hsl(60, 100%, 97%);
 $orange: hsl(9, 100%, 58%);
 $orange-light: hsl(16, 87%, 62%);
 $grey: hsl(0, 0%, 20%);
-$black: hsl(0, 100%, 0%);
+$black: hsl(0, 0%, 0%);
+$lighter-black: hsl(0, 0%, 2%);
+$pink-red: hsl(350, 79.2%, 60.4%);
+$legion-green: hsl(94, 100%, 47%);
+$darker-legion-green: hsl(89, 76%, 48%);
 
 /* LOGOS */
 $git-color: hsl(43, 100%, 12%);
@@ -30,332 +34,305 @@ $css-color: hsl(228, 78%, 52%);
 $htlm-color: hsl(16, 100%, 50%);
 
 /*=== GLOBAL STYLE ===*/
-#scrollup {
-    display: none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 25px !important;
-    border: none !important;
-    background-color: hsl(9, 100%, 58%) !important;
-    color: $white-ivory;
-    z-index: 99;
-    box-shadow: 0 0 7px -2px $black;
-}
-
-.scroll-link {
-    color: $white-ivory;
-    text-decoration: none;
-}
-
-.scroll-link:hover {
-    color: $white-ivory; 
+.container-fluid {
+  background-color: $black;
 }
 
 .card {
-    height: 100%;
-    border-radius: 0px !important;
+  height: 100%;
+  border-radius: 0px !important;
 }
 
 .card-footer {
-    background-color: $white-ivory !important;
-    border-top: 0px !important;
+  background-color: $black !important;
+  border-top: 0px !important;
 }
-
 
 /*=== VERY SMALL SCREEN ===*/
 /*=== ABOUT ME ===*/
 .about-wrapper {
-    height: 100vh;
+  height: 100vh;
+}
+
+#tsparticles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: $black;
 }
 
 .about-text {
-    color: $white-ivory;
-    font-family: $press-start;
-    position: relative;
-    text-align: center;
-    font-size: 1.6em;
-    display: flex;
-    align-items: center;
-    justify-items: center;
+  color: $white-ivory;
+  font-family: $press-start;
+  position: relative;
+  text-align: center;
+  font-size: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 /*=== PRESENTATION ===*/
 .pres-wrapper {
-  background-color: $white-ivory;
+  background-color: $black;
   margin-top: 5%;
 }
 
 .pres-section-title {
-    text-align: center;
-    font-family: $pacifico;
-    color: $grey;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    font-size: 2.5em;
+  text-align: center;
+  font-family: $pacifico;
+  color: $legion-green;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 3.5em;
 }
 
 .pres-text {
-    margin-top: 1em;
-    text-align: center;
-    font-family: $inconsolata;
-    font-size: 1.5em;
-    color: $grey;
-    line-height: 1.2em;
+  margin-top: 1em;
+  text-align: center;
+  font-family: $inconsolata;
+  font-size: 2em;
+  color: $white-ivory;
+  line-height: 1.2em;
 }
 
 /*=== PROJECTS ===*/
 .projects-wrapper {
-    background-color: $white-ivory;
+  background-color: $black;
 }
 
 .projects-wrapper .col-12 {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 .projects-section-title {
-    text-align: center;
-    font-family: $pacifico;
-    color: $grey;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-size: 2.5em;
+  text-align: center;
+  font-family: $pacifico;
+  color: $legion-green;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 3.5em;
 }
 
 .projects-card-border-top {
-    border: 0px !important;
-    border-top: 1px solid rgba(0,0,0,.125) !important;
+  border: 0px !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .projects-card-border-bot {
-    border: 0px !important;
-    border-top: 1px solid rgba(0,0,0,.125) !important;
-    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+  border: 0px !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
 .projects-body {
-    font-family: $rubik;
-    font-size: 1.2em;
-    background-color: $white-ivory !important;
+  color: $white-ivory;
+  font-family: $rubik;
+  font-size: 1.2em;
+  background-color: $black !important;
 }
 
 .projects-titles {
-    font-weight: 800 !important;
-    text-transform: uppercase;
+  font-weight: 800 !important;
+  text-transform: uppercase;
 }
 
-
 .projects-link {
-    font-family: $rubik !important;
-    border-top: 0px !important;
-    text-decoration: none !important;
-    color: $grey;
+  font-family: $rubik !important;
+  border-top: 0px !important;
+  text-decoration: none !important;
+  color: $white-ivory;
 }
 
 /*=== TECHNO ===*/
 .techno-wrapper {
-    background-color: $white-ivory;
+  background-color: $black;
 }
 
 .techno-title {
-    font-family: $pacifico;
-    color: $grey;
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-size: 2.5em;
+  font-family: $pacifico;
+  color: $legion-green;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 3.5em;
 }
 
 .techno-fa {
-    color: $grey; 
+  color: $white-ivory;
 }
 
 .techno-text {
-    color: $grey;
-    font-family: $rubik;
+  color: $white-ivory;
+  font-family: $rubik;
 }
 
 .techno-last {
-    margin-bottom: 5em;
+  margin-bottom: 5em;
 }
 
 .fa-git:hover {
-    color: $git-color;
+  color: $git-color;
 }
 
 .fa-react:hover {
-    color: $react-color;
+  color: $react-color;
 }
 
 .fa-js:hover {
-    color: $js-color;
+  color: $js-color;
 }
 
 .fa-bootstrap:hover {
-    color: $bootstrap-color;
+  color: $bootstrap-color;
 }
 
 .fa-css3:hover {
-    color: $css-color;
+  color: $css-color;
 }
 
 .fa-html5:hover {
-    color: $htlm-color;
+  color: $htlm-color;
 }
 
 /*=== FOOTER ===*/
 .footer-title {
-    margin-top: 1em;
-    font-family: $rubik;
-    color: $white-ivory;
-    text-align: center;
-    font-size: 1.2em;
+  margin-top: 1em;
+  font-family: $rubik;
+  color: $darker-legion-green;
+  text-align: center;
+  font-size: 2em;
 }
 
 .footer-links {
-    font-family: $rubik !important;
-    color: $white-ivory !important;
-    font-size: 1.2em;
-    text-decoration: underline;
+  font-family: $rubik !important;
+  color: $white-ivory !important;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 .footer-button {
-    background-color: orange !important;
-    border-radius: 25px !important;
-    border-color: orange !important;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
+  background-color: $darker-legion-green !important;
+  border-radius: 25px !important;
+  border: none !important;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
 }
 
 .footer-copy {
-    font-family: $rubik;
-    color: $white-ivory;
-    margin-bottom: 1em;
+  font-family: $rubik;
+  color: $white-ivory;
+  margin-bottom: 1em;
 }
 
 /*=== MEDIA QUERIES ===*/
 /*=== BORDER-CROSS EFFECT FROM SM SIZE ===*/
-@media screen 
-    and (min-width: 576px) {
-        .projects-card-border-top {
-            border: 0px !important;    
-        }
-        .projects-card-border-bot {
-            border: 0px !important;
-        }
-        .projects-card-border-rtop {
-            border-top: 1px solid rgba(0,0,0,.125) !important;
-        }
-        .projects-card-border-right {
-            border-right: 1px solid rgba(0,0,0,.125) !important;
-        }
-
-    }
+@media screen and (min-width: 576px) {
+  .projects-card-border-top {
+    border: 0px !important;
+  }
+  .projects-card-border-bot {
+    border: 0px !important;
+  }
+  .projects-card-border-rtop {
+    border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  }
+  .projects-card-border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.125) !important;
+  }
+}
 
 /* === NAVIGATION === */
-@media screen 
-    and (max-width: 992px) {
-        .navigation {
-            visibility: hidden;
-        }
-    }
-@media screen
-    and (min-width: 992px) {
-        body {
-            padding-left: 18em;
-        }
+@media screen and (max-width: 992px) {
+  .navigation {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    padding-left: 18em;
+  }
 
-        .navigation {
-            background-color: $white-ivory !important;
-            height: 100% !important;
-            width: 18em !important;
-            position: fixed !important;
-            z-index: 1 !important;
-            top: 0 !important;
-            left: 0 !important;
-            overflow-x: hidden !important;
-            z-index: 999 !important;
-        }
+  .navigation {
+    background-color: $lighter-black !important;
+    height: 100% !important;
+    width: 18em !important;
+    position: fixed !important;
+    z-index: 1 !important;
+    top: 0 !important;
+    left: 0 !important;
+    overflow-x: hidden !important;
+    z-index: 999 !important;
+  }
 
-        .top-title {
-            margin-top: 2em;
-        }
-        
-        .nav-title {
-            font-family: $rubik;
-            font-weight: 800;
-            color: $grey;
-        }
+  .top-title {
+    margin-top: 2em;
+  }
 
-        .nav-subtitle {
-            font-family: $rubik;
-            font-weight: 600;
-            font-size: 1.5em;
-            color: $grey;
-        }
+  .nav-title {
+    font-family: $rubik;
+    font-weight: 800;
+    color: $white-ivory;
+  }
 
-        .center-link {
-            position: absolute;
-            top:50%;
-            left: 22%;
-            transform:translate(0%, -50%);
-        }
-        .center-link a {
-            display: block !important;
-            font-size: 1.5em;
-            color: $grey;
-            font-family: $rubik;
-            text-decoration: none;
-        }
-        
-        .download-link {
-            position: absolute;
-            top: 90%;
-            left: 17%;
-        }
+  .nav-subtitle {
+    font-family: $rubik;
+    font-weight: 600;
+    font-size: 2em;
+    color: $darker-legion-green;
+  }
 
-        .download-button {
-            background: linear-gradient(to bottom right, hsl(346, 100%, 63%), hsl(9, 100%, 58%)) !important;
-            border-radius: 25px !important;
-            font-family: $rubik;
-        }
-    }
+  .center-link {
+    position: absolute;
+    top: 50%;
+    left: 22%;
+    transform: translate(0%, -50%);
+  }
+  .center-link a {
+    display: block !important;
+    font-size: 1.5em;
+    color: $white-ivory;
+    font-family: $rubik;
+    text-decoration: none;
+  }
+
+  .download-link {
+    position: absolute;
+    top: 90%;
+    left: 17%;
+  }
+
+  .download-button {
+    border: none !important;
+    border-radius: 0 !important;
+    background-color: $darker-legion-green !important;
+    font-family: $rubik;
+  }
+}
 
 /*=== SIZE ALL DEVICES ===*/
-@media screen
-    and (min-width: 300px) {
-        .pres-text {
-            text-align: justify;
-        }
-    }
+@media screen and (min-width: 300px) {
+  .pres-text {
+    text-align: justify;
+  }
+}
 
- @media screen
-    and (max-width: 450px) {
-        .footer-wrapper {
-            margin-bottom: 11%;
-        }
-    }
-    
-@media screen 
-    and (min-width: 1440px) {
-        .about-text {
-            left: 2%;
-            font-size: 2em;
-        }
-    }
+@media screen and (min-width: 1440px) {
+  .about-text {
+    left: 2%;
+    font-size: 2em;
+  }
+}
 
-@media screen 
-    and (min-width: 1600px) {
-        .about-text {
-            margin-left: 6%;
-            font-size: 2em;
-        }
-    }
+@media screen and (min-width: 1600px) {
+  .about-text {
+    font-size: 2em;
+  }
+}
 
-@media screen 
-    and (min-width: 2560px) {
-        .about-text {
-            margin-left: 20%;
-        }
-    }
+@media screen and (min-width: 2560px) {
+  .about-text {
+    margin-left: 20%;
+  }
+}
