@@ -72,14 +72,6 @@ const LinkButton = styled.button`
     margin-bottom: 0.1em;
   }
 
-  @media screen and (min-width: 640px) {
-    margin-bottom: 0.1em;
-  }
-
-  @media screen and (min-width: 640px) {
-    margin-bottom: 0.1em;
-  }
-
   @media screen and (min-width: 667px) {
     margin-bottom: 0.5em;
   }
@@ -115,7 +107,7 @@ export default class MobileNav extends React.Component {
       <React.Fragment>
         <MainButtonDiv>
           <Button onClick={this.onClick}>
-            <FontAwesomeIcon className="test" icon={this.state.active ? faTimes : faBars} />
+            <FontAwesomeIcon icon={this.state.active ? faTimes : faBars} />
           </Button>
         </MainButtonDiv>
         <LinkButtonsDiv>
