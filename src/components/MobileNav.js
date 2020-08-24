@@ -28,7 +28,8 @@ const MainButtonDiv = styled.div`
 `;
 
 const Button = styled.button`
-  display: block;
+  display: inline-block;
+  text-align: center;
   font-size: 1.5em;
   border-radius: 25px;
   border: 0;
