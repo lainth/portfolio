@@ -107,33 +107,33 @@ export default class MobileNav extends React.Component {
       <React.Fragment>
         <MainButtonDiv>
           <Button onClick={this.onClick}>
-            <FontAwesomeIcon className="test" icon={this.state.active ? faTimes : faBars} />
+            <FontAwesomeIcon className="ios-display-fix" icon={this.state.active ? faTimes : faBars} />
           </Button>
         </MainButtonDiv>
         <LinkButtonsDiv>
           <LinkButton style={{ display: this.state.active ? "block" : "none" }}>
             <StyledAnchor href="#about">
-              <FontAwesomeIcon icon={faHome} />
+              <FontAwesomeIcon className="ios-display-fix" icon={faHome} />
             </StyledAnchor>
           </LinkButton>
           <LinkButton style={{ display: this.state.active ? "block" : "none" }}>
             <StyledAnchor href="#pres">
-              <FontAwesomeIcon icon={faIdCardAlt} />
+              <FontAwesomeIcon className="ios-display-fix" icon={faIdCardAlt} />
             </StyledAnchor>
           </LinkButton>
           <LinkButton style={{ display: this.state.active ? "block" : "none" }}>
             <StyledAnchor href="#projects">
-              <FontAwesomeIcon icon={faCode} />
+              <FontAwesomeIcon className="ios-display-fix" icon={faCode} />
             </StyledAnchor>
           </LinkButton>
           <LinkButton style={{ display: this.state.active ? "block" : "none" }}>
             <StyledAnchor href="#techno">
-              <FontAwesomeIcon icon={faTools} />
+              <FontAwesomeIcon className="ios-display-fix" icon={faTools} />
             </StyledAnchor>
           </LinkButton>
           <LinkButton style={{ display: this.state.active ? "block" : "none" }}>
             <StyledAnchor href="#contact">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon className="ios-display-fix" icon={faEnvelope} />
             </StyledAnchor>
           </LinkButton>
         </LinkButtonsDiv>

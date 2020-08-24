@@ -33,6 +33,12 @@ $bootstrap-color: hsl(264, 34%, 36%);
 $css-color: hsl(228, 78%, 52%);
 $htlm-color: hsl(16, 100%, 50%);
 
+/*=== QUICK FIX ===*/
+/*I don't think those fix are optimal, but they work*/
+.ios-display-fix {
+  margin: auto -1em;
+}
+
 /*=== GLOBAL STYLE ===*/
 .container-fluid {
   background-color: $black;
@@ -46,10 +52,6 @@ $htlm-color: hsl(16, 100%, 50%);
 .card-footer {
   background-color: $black !important;
   border-top: 0px !important;
-}
-
-.test {
-  margin: auto !important;
 }
 
 /*=== VERY SMALL SCREEN ===*/
