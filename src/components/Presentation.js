@@ -35,14 +35,15 @@ class Presentation extends React.Component {
           <Col xs={12} xl={12}>
             <p className="pres-text">
               <ReactRevealText show={this.state.show}>
-                I am a savvy developper who developped a passion for programming
-                and solving problems. My goal is to become a full-stack software
-                engineer. In order to do so, I decided to specialise, in the
-                first place, in Front end and UX design. Once I'm comfortable
-                working on front end technologies, I intend to learn and work on
-                back end oriented solutions. System design, Algorithms, Data
-                Structures and working with differents kind of databases are
-                skills that I am really eager to improve.
+                I am a savvy and hard working Developper who has a passion for
+                programming and problem solving, I learn fast and enjoy to be
+                challenged. I am a very easy going person who can adjust to many
+                situations, working as a Waiter in a luxury restaurant taught me
+                how to work alongside people with different personnalities, work
+                efficiently as a team and work under a lot of pressure. My goal
+                is to become a full-stack Software Engineer, to do so, I'm
+                working on improving my knowledges in UX Design, Algorithms,
+                Data Structures, System Design and Databases.
               </ReactRevealText>
             </p>
           </Col>
