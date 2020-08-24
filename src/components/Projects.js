@@ -14,27 +14,36 @@ const Projects = () => {
       <Col xs={12} data-aos="zoom-in" data-aos-once={true}>
         <h2 className="projects-section-title">Projects</h2>
       </Col>
-      <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top projects-card-border-right">
+      <Col xs={12} sm={12} data-aos="zoom-in" data-aos-once={true}>
+        <Card className="text-center projects-card-border-top projects-card-border-bot">
           <Card.Body className="projects-body">
-            <Card.Title className="projects-titles">Portfolio</Card.Title>
+            <Card.Title className="projects-titles">MySocialMedia</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
               React - CSS - HTML
             </Card.Subtitle>
             <Card.Text>
-              This is my portfolio, I use it to display my work and it's also my
-              sandbox on which I like to experiment on different libraries.
+              I've decided to work on a larger scale project, which is a
+              forever WIP application, on which I'll work on improving my full
+              skillset.
             </Card.Text>
             <Card.Footer>
-              <a href="#" target="_blank" className="projects-link">
+              <a href="https://github.com/lainth/my-social-media" target="_blank" className="projects-link">
                 <FontAwesomeIcon icon={faGithub} /> Code here
+              </a>
+              <br />
+              <a
+                href="https://lainth.github.io/my-social-media/"
+                target="_blank"
+                className="projects-link"
+              >
+                <FontAwesomeIcon icon={faPlay} /> Live version
               </a>
             </Card.Footer>
           </Card.Body>
         </Card>
       </Col>
       <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top">
+        <Card className="text-center projects-card-border-top projects-card-border-right">
           <Card.Body className="projects-body">
             <Card.Title className="projects-titles">
               Wikipedia Viewer
@@ -47,11 +56,19 @@ const Projects = () => {
               a random article or search for a specific one.
             </Card.Text>
             <Card.Footer>
-              <a href="https://github.com/lainth/wikipedia-viewer" target="_blank" className="projects-link">
+              <a
+                href="https://github.com/lainth/wikipedia-viewer"
+                target="_blank"
+                className="projects-link"
+              >
                 <FontAwesomeIcon icon={faGithub} /> Code here
               </a>
               <br />
-              <a href="https://lainth.github.io/wikipedia-viewer/" target="_blank" className="projects-link">
+              <a
+                href="https://lainth.github.io/wikipedia-viewer/"
+                target="_blank"
+                className="projects-link"
+              >
                 <FontAwesomeIcon icon={faPlay} /> Live version
               </a>
             </Card.Footer>
@@ -59,46 +76,19 @@ const Projects = () => {
         </Card>
       </Col>
       <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top projects-card-border-right projects-card-border-rtop">
+        <Card className="text-center projects-card-border-top">
           <Card.Body className="projects-body">
-            <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
+            <Card.Title className="projects-titles">Portfolio</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              Lorem - Lorem - Lorem
+              React - CSS - HTML
             </Card.Subtitle>
             <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              This is my portfolio, I use it to display my work and it's also my
+              sandbox on which I like to experiment on different libraries.
             </Card.Text>
             <Card.Footer>
               <a href="#" target="_blank" className="projects-link">
                 <FontAwesomeIcon icon={faGithub} /> Code here
-              </a>
-              <br />
-              <a href="#" target="_blank" className="projects-link">
-                <FontAwesomeIcon icon={faPlay} /> Live version
-              </a>
-            </Card.Footer>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top projects-card-border-bot projects-card-border-rtop">
-          <Card.Body className="projects-body">
-            <Card.Title className="projects-titles">Lorem ipsum</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-              Lorem - Lorem - Lorem
-            </Card.Subtitle>
-            <Card.Text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </Card.Text>
-            <Card.Footer>
-              <a href="#" target="_blank" className="projects-link">
-                <FontAwesomeIcon icon={faGithub} /> Code here
-              </a>
-              <br />
-              <a href="#" target="_blank" className="projects-link">
-                <FontAwesomeIcon icon={faPlay} /> Live version
               </a>
             </Card.Footer>
           </Card.Body>
