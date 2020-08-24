@@ -28,8 +28,7 @@ const MainButtonDiv = styled.div`
 `;
 
 const Button = styled.button`
-  display: inline-block;
-  text-align: center;
+  display: block;
   font-size: 1.5em;
   border-radius: 25px;
   border: 0;
@@ -116,7 +115,7 @@ export default class MobileNav extends React.Component {
       <React.Fragment>
         <MainButtonDiv>
           <Button onClick={this.onClick}>
-            <FontAwesomeIcon icon={this.state.active ? faTimes : faBars} />
+            <FontAwesomeIcon className="ct" icon={this.state.active ? faTimes : faBars} />
           </Button>
         </MainButtonDiv>
         <LinkButtonsDiv>

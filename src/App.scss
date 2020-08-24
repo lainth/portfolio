@@ -48,6 +48,12 @@ $htlm-color: hsl(16, 100%, 50%);
   border-top: 0px !important;
 }
 
+
+.ct {
+  text-align: center;
+  width: 100% !important;
+}
+
 /*=== VERY SMALL SCREEN ===*/
 /*=== ABOUT ME ===*/
 .about-wrapper {
@@ -329,11 +335,4 @@ $htlm-color: hsl(16, 100%, 50%);
   .about-text {
     margin-left: 20%;
   }
-}
-
-
-/*=== QUICK FIX ===*/
-
-.ctr {
- padding-right: 2em !important;
 }
