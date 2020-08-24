@@ -29,7 +29,6 @@ const MainButtonDiv = styled.div`
 
 const Button = styled.button`
   display: block;
-  text-align: center;
   font-size: 1.5em;
   border-radius: 25px;
   border: 0;
@@ -60,7 +59,6 @@ const LinkButtonsDiv = styled.div`
 
 const LinkButton = styled.button`
   text-decoration: none;
-  text-align: center;
   font-size: 1.5em;
   border-radius: 25px;
   border: 0;
