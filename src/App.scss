@@ -120,12 +120,6 @@ $htlm-color: hsl(16, 100%, 50%);
   border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
 }
 
-.projects-card-border-bot {
-  border: 0px !important;
-  border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
-}
-
 .projects-body {
   color: $white-ivory;
   font-family: $rubik;
@@ -235,8 +229,8 @@ $htlm-color: hsl(16, 100%, 50%);
   .projects-card-border-bot {
     border: 0px !important;
   }
-  .projects-card-border-rtop {
-    border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  .projects-card-border-bot {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
   }
   .projects-card-border-right {
     border-right: 1px solid rgba(0, 0, 0, 0.125) !important;

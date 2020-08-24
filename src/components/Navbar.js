@@ -6,8 +6,8 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { faSwimmer } from "@fortawesome/free-solid-svg-icons";
-import { faBiking } from "@fortawesome/free-solid-svg-icons";
 import { faHiking } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 const StyledSpan = styled.span`
   font-size: 1.5em;
@@ -28,7 +28,7 @@ const NavBar = () => {
           <FontAwesomeIcon icon={faSwimmer} title="Swimming" />
         </StyledSpan>
         <StyledSpan>
-          <FontAwesomeIcon icon={faBiking} title="Biking" />
+          <FontAwesomeIcon icon={faBook} title="Reading" />
         </StyledSpan>
         <StyledSpan>
           <FontAwesomeIcon icon={faHiking} title="Hiking" />
