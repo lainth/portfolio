@@ -115,10 +115,7 @@ export default class MobileNav extends React.Component {
       <React.Fragment>
         <MainButtonDiv>
           <Button onClick={this.onClick}>
-            <FontAwesomeIcon
-              className="ct"
-              icon={this.state.active ? faTimes : faBars}
-            />
+            <FontAwesomeIcon icon={this.state.active ? faTimes : faBars} />
           </Button>
         </MainButtonDiv>
         <LinkButtonsDiv>
