@@ -3,6 +3,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 
+import Pdf from '../files/resume.pdf';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { faSwimmer } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +17,18 @@ const StyledSpan = styled.span`
   margin-right: 0.5em;
 `;
 
-const NavBar = () => {
+const StyledA = styled.a`
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+`;
+
+const NavBar = () => {  
   return (
     <div className="navigation text-center">
       <div className="top-title">
@@ -43,7 +56,9 @@ const NavBar = () => {
       </div>
       <div className="download-link center-block">
         <Button className="download-button border-white">
-          Download my resume
+          <StyledA href={Pdf} target="_blank" rel="noopener noreferrer">
+            Check out my resume
+          </StyledA>
         </Button>
       </div>
     </div>
