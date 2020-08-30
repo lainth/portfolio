@@ -220,6 +220,15 @@ $htlm-color: hsl(16, 100%, 50%);
   margin-bottom: 1.5em;
 }
 
+.footer-cv-button {
+  background-color: $legion-green !important;
+  border-radius: 25px !important;
+  border: none !important;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+
 .footer-copy {
   font-family: $rubik;
   color: $white-ivory;
