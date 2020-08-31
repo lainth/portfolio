@@ -22,21 +22,24 @@ const Projects = () => {
               React - CSS - HTML
             </Card.Subtitle>
             <Card.Text>
-              I've decided to work on a larger scale project, which is a
-              forever WIP application, on which I'll work on improving my full
-              skillset.
+              I've decided to work on a larger scale project, which is a forever
+              WIP application, on which I'll work on improving my full skillset.
             </Card.Text>
             <Card.Footer>
-              <a href="https://github.com/lainth/my-social-media" target="_blank" className="projects-link">
+              <a
+                href="https://github.com/lainth/my-social-media"
+                target="_blank"
+                className="projects-link"
+              >
                 <FontAwesomeIcon icon={faGithub} /> Code here
               </a>
               <br />
               <a
-                href="https://lainth.github.io/my-social-media/"
+                href="https://github.com/lainth/my-social-media"
                 target="_blank"
                 className="projects-link"
               >
-                <FontAwesomeIcon icon={faPlay} /> Live version
+                <FontAwesomeIcon icon={faPlay} /> Live version (coming soon)
               </a>
             </Card.Footer>
           </Card.Body>
@@ -59,6 +62,7 @@ const Projects = () => {
               <a
                 href="https://github.com/lainth/wikipedia-viewer"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="projects-link"
               >
                 <FontAwesomeIcon icon={faGithub} /> Code here
@@ -67,6 +71,7 @@ const Projects = () => {
               <a
                 href="https://lainth.github.io/wikipedia-viewer/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="projects-link"
               >
                 <FontAwesomeIcon icon={faPlay} /> Live version
@@ -87,7 +92,12 @@ const Projects = () => {
               sandbox on which I like to experiment on different libraries.
             </Card.Text>
             <Card.Footer>
-              <a href="#" target="_blank" className="projects-link">
+              <a
+                href="https://github.com/lainth/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="projects-link"
+              >
                 <FontAwesomeIcon icon={faGithub} /> Code here
               </a>
             </Card.Footer>
