@@ -1,16 +1,20 @@
 import React from "react";
 
 import Container from "react-bootstrap/Container";
+
 import MobileNav from "./components/MobileNav";
 import NavBar from "./components/Navbar";
 import AboutMe from "./components/AboutMe";
 import Presentation from "./components/Presentation";
 import Projects from "./components/Projects";
 import Techno from "./components/Techno";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+
 import MediaQuery from "react-responsive";
 import $ from "jquery";
 import AOS from "aos";
+
 import "./App.scss";
 
 // Reset the view to the top at each browser refresh
@@ -38,6 +42,7 @@ class App extends React.Component {
         <Presentation />
         <Projects />
         <Techno />
+        <Contact />
         <Footer />
       </Container>
     );
