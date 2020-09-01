@@ -190,6 +190,28 @@ $htlm-color: hsl(16, 100%, 50%);
   color: $htlm-color;
 }
 
+
+/*=== CONTACT ===*/
+.contact-title {
+  font-family: $pacifico;
+  color: $legion-green;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 3.5em;
+}
+
+.contact-label {
+  color: $white-ivory;
+  font-family: $inconsolata;
+}
+
+.contact-submit-btn {
+  background-color: $legion-green !important;
+  border-color: $legion-green !important;
+  width: 100%;
+}
+
 /*=== FOOTER ===*/
 .footer-title {
   margin-top: 1em;
