@@ -19,7 +19,7 @@ const popover = (
 
 const Footer = () => {
   return (
-    <Row id="contact" name="contact" className="footer-wrapper">
+    <Row className="footer-wrapper">
       <Col xs={12}>
         <p className="footer-title">Want to get in touch?</p>
       </Col>
