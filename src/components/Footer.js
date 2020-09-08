@@ -14,12 +14,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
-const popover = (
-  <Popover id="popover-mail">
-    <Popover.Content>thomas.laine25@gmail.com</Popover.Content>
-  </Popover>
-);
-
 const StyledA = styled.a`
   color: white;
   text-decoration: none;
@@ -38,7 +32,7 @@ const Footer = () => {
       <Col xs={12}>
         <p className="footer-title">Want to know more?</p>
       </Col>
-      <Col xs={12} sm={3} className="text-center">
+      <Col xs={12} sm={4} className="text-center">
         <Nav className="mr-auto flex-column">
           <Nav.Link
             href="https://github.com/lainth"
@@ -49,7 +43,7 @@ const Footer = () => {
           </Nav.Link>
         </Nav>
       </Col>
-      <Col xs={12} sm={3} className="text-center">
+      <Col xs={12} sm={4} className="text-center">
         <Nav className="mr-auto flex-column">
           <Nav.Link
             href="https://twitter.com/ilainth"
@@ -60,12 +54,7 @@ const Footer = () => {
           </Nav.Link>
         </Nav>
       </Col>
-      <Col xs={12} sm={3} className="text-center">
-        <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-          <Button className="footer-button">Email Me!</Button>
-        </OverlayTrigger>
-      </Col>
-      <Col xs={12} sm={3} className="text-center">
+      <Col xs={12} sm={4} className="text-center">
           <Button className="footer-cv-button">
           <StyledA  href={Pdf} target="_blank" rel="noopener noreferrer">
              My CV Here!
