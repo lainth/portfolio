@@ -212,6 +212,16 @@ $htlm-color: hsl(16, 100%, 50%);
   width: 100%;
 }
 
+.contact-success-msg {
+  color: #57A773;
+  padding: 10px 15px;
+}
+
+.contact-err-msg {
+  color: #EE6352;
+  padding: 10px 15px;
+}
+
 /*=== FOOTER ===*/
 .footer-title {
   margin-top: 1em;
