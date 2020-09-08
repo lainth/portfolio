@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <Row className="footer-wrapper">
       <Col xs={12}>
-        <p className="footer-title">Want to get in touch?</p>
+        <p className="footer-title">Want to know more?</p>
       </Col>
       <Col xs={12} sm={4} className="text-center">
         <Nav className="mr-auto flex-column">
