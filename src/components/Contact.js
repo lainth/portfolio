@@ -5,6 +5,8 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
+import axios from "axios";
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,7 @@ class Contact extends React.Component {
     const name = target.name;
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
   };
 
@@ -31,10 +33,30 @@ class Contact extends React.Component {
     event.preventDefault();
 
     this.setState({
-      disabled: true,
-      emailSent: false,
+      disabled: true
     });
-  };
+
+    axios.post("http://localhost:3030/api/email", this.state)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({
+            disabled: false,
+            emailSent: true
+          });
+        } else {
+            this.setState({
+              disabled: false,
+              emailSent: false
+            });
+        }
+      })
+      .catch(err => {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        });
+    })
+  }
 
   render() {
     return (
@@ -103,7 +125,7 @@ class Contact extends React.Component {
 
             {this.state.emailSent === true && (
               <p className="d-inline contact-success-msg">
-                You email has been successfully sent, I'll get back to you
+                Your email has been successfully sent, I'll get back to you
                 quickly.
               </p>
             )}
