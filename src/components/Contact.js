@@ -5,140 +5,97 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
-import axios from "axios";
+import emailjs from "emailjs-com";
 
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      message: "",
-      disabled: false,
-      emailSent: null,
-    };
-  }
+const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  handleChange = (event) => {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
-
-    this.setState({
-      [name]: value,
-    });
+    emailjs
+      .sendForm("gmail", "template-portfolio", e.target, "user_fDJh6rzxowfr4fhKECLs1")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      e.target.reset();
   };
 
-  handleSubmit = (event) => {
-    event.preventDefault();
-
-    this.setState({
-      disabled: true
-    });
-
-    axios.post("http://localhost:3030/api/email", this.state)
-      .then(res => {
-        if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true
-          });
-        } else {
-            this.setState({
-              disabled: false,
-              emailSent: false
-            });
-        }
-      })
-      .catch(err => {
-        this.setState({
-          disabled: false,
-          emailSent: false
-        });
-    })
-  }
-
-  render() {
-    return (
-      <Row id="contact" name="contact">
-        <Col xs={12}>
-          <h2 className="contact-title" data-aos="zoom-in" data-aos-once={true}>
-            Contact
-          </h2>
-        </Col>
-        <Col>
-          <Form onSubmit={this.handleSubmit}>
-            <Form.Group>
-              <Form.Label htmlFor="full-name" className="contact-label">
-                Name *
-              </Form.Label>
-              <Form.Control
-                id="full-name"
-                name="name"
-                type="text"
-                value={this.state.name}
-                onChange={this.handleChange}
-                placeholder="Enter your name"
-                required
-              />
-            </Form.Group>
-            <Form.Group>
-              <Form.Label htmlFor="email" className="contact-label">
-                Email address *
-              </Form.Label>
-              <Form.Control
-                id="email"
-                name="email"
-                type="email"
-                value={this.state.email}
-                onChange={this.handleChange}
-                placeholder="Enter email"
-                required
-              />
-              <Form.Text className="text-muted">
-                I'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
-            <Form.Group>
-              <Form.Label htmlFor="message" className="contact-label">
-                Message *
-              </Form.Label>
-              <Form.Control
-                id="message"
-                name="message"
-                as="textarea"
-                rows="3"
-                value={this.state.message}
-                onChange={this.handleChange}
-                placeholder="Enter your message..."
-                required
-              />
-            </Form.Group>
-            <Button
-              className="contact-submit-btn"
-              variant="primary"
-              type="submit"
-              disabled={this.state.disabled}
-            >
-              Submit
-            </Button>
-
-            {this.state.emailSent === true && (
-              <p className="d-inline contact-success-msg">
-                Your email has been successfully sent, I'll get back to you
-                quickly.
-              </p>
-            )}
-            {this.state.emailSent === false && (
-              <p className="d-inline contact-err-msg">
-                Something went wrong, your email could not be sent...
-              </p>
-            )}
-          </Form>
-        </Col>
-      </Row>
-    );
-  }
-}
+  return (
+    <Row id="contact" name="contact">
+      <Col xs={12}>
+        <h2 className="contact-title" data-aos="zoom-in" data-aos-once={true}>
+          Contact
+        </h2>
+      </Col>
+      <Col>
+        <Form onSubmit={sendEmail}>
+          <Form.Group>
+            <Form.Label htmlFor="full-name" className="contact-label">
+              Name *
+            </Form.Label>
+            <Form.Control
+              id="full-name"
+              name="name"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label htmlFor="email" className="contact-label">
+              Email address *
+            </Form.Label>
+            <Form.Control
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter email"
+              required
+            />
+            <Form.Text className="text-muted">
+              I'll never share your email with anyone else.
+            </Form.Text>
+          </Form.Group>
+          <Form.Group>
+            <Form.Label htmlFor="subject" className="contact-label">
+              Subject *
+            </Form.Label>
+            <Form.Control
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="Enter a subject"
+              required
+            />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label htmlFor="message" className="contact-label">
+              Message *
+            </Form.Label>
+            <Form.Control
+              id="message"
+              name="message"
+              as="textarea"
+              rows="3"
+              placeholder="Enter your message..."
+              required
+            />
+          </Form.Group>
+          <Button
+            className="contact-submit-btn"
+            variant="primary"
+            type="submit"
+          >
+            Submit
+          </Button>
+        </Form>
+      </Col>
+    </Row>
+  );
+};
 
 export default Contact;
