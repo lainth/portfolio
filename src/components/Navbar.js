@@ -3,7 +3,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import styled from "styled-components";
 
-import Pdf from '../files/resume.pdf';
+import Pdf from "../files/resume.pdf";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
@@ -25,15 +25,14 @@ const StyledA = styled.a`
     color: white;
     text-decoration: none;
   }
-
 `;
 
-const NavBar = () => {  
+const NavBar = () => {
   return (
     <div className="navigation text-center">
       <div className="top-title">
         <h1 className="nav-title">Thomas</h1>
-        <p className="nav-subtitle">Web Developer</p>
+        <p className="nav-subtitle">IT Savvy</p>
         <StyledSpan>
           <FontAwesomeIcon icon={faGamepad} title="Gaming" />
         </StyledSpan>

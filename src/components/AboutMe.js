@@ -16,7 +16,7 @@ const AboutMe = () => {
             <span>Welcome.</span>
             <Typist.Delay ms={1000} />
             <br />
-            <span>I'm Thomas, a self-taught web developer from France.</span>
+            <span>I'm Thomas, a self-taught IT savvy from France.</span>
             <Typist.Delay ms={1000} />
             <br />
             <span>Let's get to know each other.</span>

@@ -36,14 +36,15 @@ class Presentation extends React.Component {
             <p className="pres-text">
               <ReactRevealText show={this.state.show}>
                 I am a savvy and hard working Developper who has a passion for
-                programming and problem solving, I learn fast and enjoy to be
-                challenged. I am a very easy going person who can adjust to many
-                situations, working as a Waiter in a luxury restaurant taught me
-                how to work alongside people with different personnalities, work
-                efficiently as a team and work under a lot of pressure. My goal
-                is to become a full-stack Software Engineer, to do so, I'm
-                working on improving my knowledges in UX Design, Algorithms,
-                Data Structures, System Design and Databases.
+                programming, problem solving and IT in general, I learn fast and
+                enjoy to be challenged. I am a very easy going person who can
+                adjust to many situations, working as a Waiter in a luxury
+                restaurant taught me how to work alongside people with different
+                personnalities, work efficiently as a team and work under a lot
+                of pressure. My goal is to be able to live off of my passion
+                which is the IT industry, to do so, I'm working on improving my
+                knowledges through several online ressources such as
+                OpenClassrooms, FreeCodeCamp and much more.
               </ReactRevealText>
             </p>
           </Col>
