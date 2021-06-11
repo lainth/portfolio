@@ -14,32 +14,64 @@ const Projects = () => {
       <Col xs={12} data-aos="zoom-in" data-aos-once={true}>
         <h2 className="projects-section-title">Projects</h2>
       </Col>
-      <Col xs={12} sm={12} data-aos="zoom-in" data-aos-once={true}>
-        <Card className="text-center projects-card-border-top projects-card-border-bot">
+      <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
+        <Card className="text-center projects-card-border-top projects-card-border-bot projects-card-border-right">
           <Card.Body className="projects-body">
-            <Card.Title className="projects-titles">MySocialMedia</Card.Title>
+            <Card.Title className="projects-titles">Etch-a-Sketch</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              React - CSS - HTML
+              Javascript - CSS - HTML
             </Card.Subtitle>
             <Card.Text>
-              I've decided to work on a larger scale project, which is a forever
-              WIP application, on which I'll work on improving my full skillset.
+              A mini project realised with Javascript displaying several color
+              on hover on a grid.
             </Card.Text>
             <Card.Footer>
               <a
-                href="https://github.com/lainth/my-social-media"
+                href="https://github.com/lainth/etch-a-sketch"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="projects-link"
               >
                 <FontAwesomeIcon icon={faGithub} /> Code here
               </a>
               <br />
               <a
-                href="https://github.com/lainth/my-social-media"
+                href="https://lainth.github.io/etch-a-sketch/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="projects-link"
               >
-                <FontAwesomeIcon icon={faPlay} /> Live version (coming soon)
+                <FontAwesomeIcon icon={faPlay} /> Live version
+              </a>
+            </Card.Footer>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col xs={12} sm={6} data-aos="zoom-in" data-aos-once={true}>
+        <Card className="text-center projects-card-border-top projects-card-border-bot">
+          <Card.Body className="projects-body">
+            <Card.Title className="projects-titles">Calculator</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              Javascript - CSS - HTML
+            </Card.Subtitle>
+            <Card.Text>A calculator created with Javascript.</Card.Text>
+            <Card.Footer>
+              <a
+                href="https://github.com/lainth/calculator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="projects-link"
+              >
+                <FontAwesomeIcon icon={faGithub} /> Code here
+              </a>
+              <br />
+              <a
+                href="https://lainth.github.io/calculator/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="projects-link"
+              >
+                <FontAwesomeIcon icon={faPlay} /> Live version
               </a>
             </Card.Footer>
           </Card.Body>
