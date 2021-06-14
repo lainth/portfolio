@@ -32,7 +32,7 @@ const NavBar = () => {
     <div className="navigation text-center">
       <div className="top-title">
         <h1 className="nav-title">Thomas</h1>
-        <p className="nav-subtitle">IT Savvy</p>
+        <p className="nav-subtitle">Web Developer</p>
         <StyledSpan>
           <FontAwesomeIcon icon={faGamepad} title="Gaming" />
         </StyledSpan>
